@@ -1,5 +1,6 @@
 package datastruct;
 
+import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -118,21 +119,35 @@ public class BinaryTree {
 			rootFirstSearch(root.right);
 		}
 	}
-	
+	/**
+	 * DFS  树的深度优先遍历就是先序遍历
+	 * @param root
+	 */
 	public static void rootFirstSearchNoRecursive(TreeNode root){
-		
+		ArrayDeque<TreeNode> s = new ArrayDeque<TreeNode>();
+		if(root==null) return;
+		s.push(root);
+		while(!s.isEmpty()){
+			TreeNode node = s.pop();
+			System.out.print(node.value+ ", ");
+			if(node.right != null)
+				s.push(node.right);
+			if(node.left != null)
+				s.push(node.left);
+		}
 	}
 	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		TreeNode root = Util.RandomBinaryTree(5);
+		TreeNode root = Util.RandomBinaryTree(3);
 		BFS(root);
 		System.out.println();
 		rootFirstSearch(root);
 		System.out.println();
-		rootMidSearch(root);
+		
+		rootFirstSearchNoRecursive(root);
 	}
 
 }

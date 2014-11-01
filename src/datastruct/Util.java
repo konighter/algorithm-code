@@ -1,7 +1,10 @@
 package datastruct;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Random;
+
+import linkedlist.LinkedNode;
 
 public class Util {
 	public static Random r = new Random();
@@ -60,13 +63,51 @@ public class Util {
 			return null;
 	}
 	
+	public static LinkedNode RandomLinkedList(int l){
+		if(l<=0) return null;
+		LinkedNode head = new LinkedNode();
+		LinkedNode cur  = head;
+		head.value = r.nextInt(50);
+		for(int i=0;i<l-1;i++){
+			LinkedNode node = new LinkedNode();
+			node.value = r.nextInt(50);
+			cur.next = node;
+			cur = node;
+		}
+		return head;
+	}
 	
+	public static  LinkedNode RandomIncLinkedList(int l){
+		if(l<=0) return null;
+		int init = r.nextInt(50);
+		LinkedNode head = new LinkedNode();
+		head.value = init++;
+		LinkedNode cur  = head;
+		for(int i=0;i<l-1;i++){
+			LinkedNode node = new LinkedNode();
+			node.value = init++;
+			cur.next = node;
+			cur = node;
+		}
+		return head;
+	}
+	
+	public static void printLinkedList(LinkedNode head){
+		LinkedNode cur = head;
+		while(cur != null){
+			System.out.print(cur.value+"->");
+			cur = cur.next;
+		}
+		System.out.println();
+	}
 	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+		printLinkedList(RandomLinkedList(5));
+		printLinkedList(RandomIncLinkedList(5));
+		IOException e = new IOException();
 	}
 
 }
