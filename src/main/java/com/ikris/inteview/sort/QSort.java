@@ -1,4 +1,4 @@
-package datastruct.sort;
+package com.ikris.inteview.sort;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,10 +1,9 @@
-package datastruct;
+package com.ikris.inteview.datastrct;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Random;
 
-import linkedlist.LinkedNode;
 
 public class Util {
 	public static Random r = new Random();

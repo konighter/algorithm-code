@@ -1,8 +1,9 @@
-package datastruct.sort;
+package com.ikris.inteview.sort;
 
 import java.util.Arrays;
 
-import datastruct.Util;
+import com.ikris.inteview.datastrct.Util;
+
 
 public class BinarySearch {
 	
