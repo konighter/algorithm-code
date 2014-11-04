@@ -1,12 +1,18 @@
-package com.ikris.inteview.datastrct;
+package com.ikris.exprice.datastrct;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Random;
+
+import org.apache.commons.codec.digest.Md5Crypt;
 
 
 public class Util {
 	public static Random r = new Random();
+	
 	public static int[] RandomIntList(int n ){
 		Random r = new Random();
 		int[] l = new int[n];
@@ -98,6 +104,16 @@ public class Util {
 			cur = cur.next;
 		}
 		System.out.println();
+	}
+	
+	public static String MD5(String s){
+			try {
+				return Md5Crypt.md5Crypt(s.getBytes("UTF-8"));
+			} catch (UnsupportedEncodingException e) {
+				return null;
+			}
+		
+		
 	}
 	
 	/**

@@ -1,8 +1,8 @@
-package com.ikris.inteview.sort;
+package com.ikris.exprice.sort;
 
 import java.util.Arrays;
 
-import com.ikris.inteview.datastrct.Util;
+import com.ikris.exprice.datastrct.Util;
 
 
 public class BinarySearch {

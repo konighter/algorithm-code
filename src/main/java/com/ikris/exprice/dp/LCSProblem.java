@@ -1,4 +1,4 @@
-package com.ikris.inteview.dp;
+package com.ikris.exprice.dp;
 
 public class LCSProblem {
 	/** 递进的标志 */

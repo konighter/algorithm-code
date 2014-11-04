@@ -1,6 +1,6 @@
-package com.ikris.inteview.sort;
+package com.ikris.exprice.sort;
 
-import com.ikris.inteview.datastrct.Util;
+import com.ikris.exprice.datastrct.Util;
 
 
 public class OddEvenRsort {

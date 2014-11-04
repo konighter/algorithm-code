@@ -1,4 +1,4 @@
-package com.ikris.inteview.datastrct;
+package com.ikris.exprice.datastrct;
 
 public class LinkedNode {
 	public int value;
