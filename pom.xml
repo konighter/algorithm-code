@@ -9,7 +9,7 @@
 		<spring-version>4.1.1.RELEASE</spring-version>
 		<mysql-connector-version>5.1.9</mysql-connector-version>
 		<atomikos-version>3.9.3</atomikos-version>
-		<netty-version>4.0.24.Final</netty-version>
+		<netty-version>4.1.42.Final</netty-version>
 	</properties>
 
 	<dependencies>
