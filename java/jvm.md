@@ -8,14 +8,14 @@
     - Old
     - Humongous
   - Yong GC
-    - 
+  
   - Mixed GC
     - global concurrent marking
-     - initial mark (stw)
-     - Root set scan
-     - Concurrent mark
-     - remark (stw)
-     - copy && clean (stw)
+      - initial mark (stw)
+      - Root set scan
+      - Concurrent mark
+      - remark (stw)
+      - copy && clean (stw)
    
     
   - Remember set
